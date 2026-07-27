@@ -1,1 +1,79 @@
-
+{
+  "info": {
+    "_postman_id": "15ebf7dc-14fc-410b-9590-aef27db6fcca",
+    "name": "InventarioAPI",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "54976467",
+    "_collection_link": "https://go.postman.co/collection/54976467-15ebf7dc-14fc-410b-9590-aef27db6fcca?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "New Request",
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              ""
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        },
+        {
+          "listen": "prerequest",
+          "script": {
+            "exec": [
+              "pm.test(\"Status code is 200\", function () {\r",
+              "2\r",
+              "pm.response.to.have.status(200);\r",
+              "3\r",
+              "});"
+            ],
+            "type": "text/javascript",
+            "packages": {},
+            "requests": {}
+          }
+        }
+      ],
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:7078/api/productos",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "7078",
+          "path": [
+            "api",
+            "productos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:7078/api/productos",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "7078",
+          "path": [
+            "api",
+            "productos"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
