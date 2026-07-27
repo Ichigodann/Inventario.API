@@ -1,6 +1,8 @@
 name: Run API Tests with Postman
 
 on:
+  workflow_dispatch:
+
   push:
     branches:
       - main
@@ -38,3 +40,4 @@ jobs:
         with:
           name: Newman-HTML-Report
           path: ./newman/report.html
+
